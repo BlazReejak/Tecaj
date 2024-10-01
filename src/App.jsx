@@ -14,13 +14,14 @@ import {
 
 const router = createBrowserRouter([
   {
+    
     path: '/',
     element: <HomeLayout />,
     errorElement:<Error />,
     children: [
       {
         index: true,
-        element: <Landing />,
+        element: <Landing/>,
       },
       {
         path: 'register',
@@ -37,8 +38,6 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-
-
 
 
 const App = () => {
